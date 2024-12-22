@@ -175,8 +175,8 @@ table{
 }
 @-webkit-keyframes circle{
   0%{
-    -webkit-transform:translateY(0) rotate(0deg) scale(1);
-            transform:translateY(0) rotate(0deg) scale(1);
+    -webkit-transform:translateY(0) rotate(120deg) scale(1);
+            transform:translateY(0) rotate(120deg) scale(1);
   }
   15%{
     -webkit-transform:translateX(350px) translateY(-305px) rotate(-60deg) scale(1.2);
@@ -209,8 +209,8 @@ table{
 }
 @keyframes circle{
   0%{
-    -webkit-transform:translateY(0) rotate(0deg) scale(1);
-            transform:translateY(0) rotate(0deg) scale(1);
+    -webkit-transform:translateY(0) rotate(120deg) scale(1);
+            transform:translateY(0) rotate(120deg) scale(1);
   }
   15%{
     -webkit-transform:translateX(350px) translateY(-305px) rotate(-60deg) scale(1.2);
