@@ -155,8 +155,8 @@ table{
   width:100px;
   height:100px;
   border-radius:50%;
-  background-image:-webkit-gradient(linear, left bottom, left top, from(red), to(rgb(73, 10, 155)));
-  background-image:linear-gradient(0deg, red, rgb(73, 10, 155));
+  background-image:-webkit-gradient(linear, left bottom, left top, from(red), color-stop(yellow), to(rgb(73, 10, 155)));
+  background-image:linear-gradient(0deg, red, yellow, rgb(73, 10, 155));
   -webkit-animation-name:circle;
           animation-name:circle;
   -webkit-animation-duration:5s;
@@ -175,8 +175,8 @@ table{
             transform:translateY(0);
   }
   15%{
-    -webkit-transform:translateX(350px) translateY(-300px) rotate(-51deg);
-            transform:translateX(350px) translateY(-300px) rotate(-51deg);
+    -webkit-transform:translateX(350px) translateY(-300px) rotate(51deg);
+            transform:translateX(350px) translateY(-300px) rotate(51deg);
   }
   30%{
     -webkit-transform:translateX(700px) translateY(0) rotate(-102deg);
@@ -195,8 +195,8 @@ table{
             transform:translateX(-700px) translateY(0) rotate(-255deg);
   }
   90%{
-    -webkit-transform:translateX(-350px) translateY(300px) rotate(360deg);
-            transform:translateX(-350px) translateY(300px) rotate(360deg);
+    -webkit-transform:translateX(-350px) translateY(300px) rotate(-360deg);
+            transform:translateX(-350px) translateY(300px) rotate(-360deg);
   }
 }
 @keyframes circle{
@@ -205,8 +205,8 @@ table{
             transform:translateY(0);
   }
   15%{
-    -webkit-transform:translateX(350px) translateY(-300px) rotate(-51deg);
-            transform:translateX(350px) translateY(-300px) rotate(-51deg);
+    -webkit-transform:translateX(350px) translateY(-300px) rotate(51deg);
+            transform:translateX(350px) translateY(-300px) rotate(51deg);
   }
   30%{
     -webkit-transform:translateX(700px) translateY(0) rotate(-102deg);
@@ -225,7 +225,7 @@ table{
             transform:translateX(-700px) translateY(0) rotate(-255deg);
   }
   90%{
-    -webkit-transform:translateX(-350px) translateY(300px) rotate(360deg);
-            transform:translateX(-350px) translateY(300px) rotate(360deg);
+    -webkit-transform:translateX(-350px) translateY(300px) rotate(-360deg);
+            transform:translateX(-350px) translateY(300px) rotate(-360deg);
   }
 }
