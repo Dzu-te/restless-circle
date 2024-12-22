@@ -1,0 +1,168 @@
+@use "reset";
+
+.body {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+}
+
+.figures {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border: 1px solid black;  
+}
+
+.my-square {
+  fill: rgb(42, 223, 21);
+  stroke-width: 5;
+  stroke: rgb(214, 19, 19);
+  animation-name: square;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes square {
+  0% {
+    fill: rgb(53, 130, 45);
+    stroke: rgb(255, 0, 0);
+    transform: translateX(0) translateY(0);
+  }
+
+  25% {
+    fill: rgb(253, 245, 2);
+    stroke: rgb(60, 11, 238);
+    transform: translateX(100px) translateY(50px);
+  }
+
+  50% {
+    fill: rgb(51, 0, 255);
+    stroke: rgb(234, 255, 0);
+    transform: translateX(0px) translateY(0px);
+  }
+
+  75% {
+    fill: rgb(204, 0, 255);
+    stroke: rgb(162, 255, 0);
+    transform: translateX(-100px) translateY(-50px);
+  }
+
+  100% {
+    fill: rgb(0, 191, 255);
+    stroke: rgb(128, 255, 0);
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.my-square:hover {
+  fill: rgb(214, 19, 19);
+  stroke: rgb(42, 223, 21);
+  animation-play-state: paused;
+}
+
+.my-rectangle {
+  fill: rgb(255, 0, 0);
+  stroke-width: 5;
+  stroke: rgb(85, 8, 239);
+  animation-name: rectangle;
+  animation-duration: 5s;
+  animation-duration: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+@keyframes rectangle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.my-rectangle:hover {
+  fill: rgb(85, 8, 239);
+  stroke: rgb(255, 0, 0);
+  animation-play-state: paused;
+}
+
+.my-circle {
+  
+  fill: rgb(0, 0, 255);
+  stroke-width: 5;
+  stroke: rgb(0, 0, 0);
+  animation-name: circle;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  // transform-origin: center;  
+}
+
+@keyframes circle {
+  0% {
+    transform: translateY(0);
+    
+  }
+
+  25% {
+    transform: translateY(135px);   
+  }
+
+  50% {
+    transform:translateY(135px) translateX(135px);    
+  }
+
+  75% {
+    transform:translateY(0) translateX(135px);
+  }
+}
+
+.my-circle:hover {
+  fill: rgb(0, 0, 0);
+  stroke: rgb(0, 0, 255);
+  animation-play-state: paused;
+}
+
+.my-ellipse {
+  fill: rgb(244, 13, 159);
+  stroke-width: 5;
+  stroke: rgb(238, 238, 10);
+  animation-name: ellipse;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+}
+
+@keyframes ellipse {
+  from {
+    transform: rotate(0deg);
+
+  }
+
+  to {
+    transform: rotate(-360deg);
+
+  }
+}
+
+.my-ellipse:hover {
+  fill: rgb(238, 238, 10);
+  stroke: rgb(244, 13, 159);
+  animation-play-state: paused;
+}
